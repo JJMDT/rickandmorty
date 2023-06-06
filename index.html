@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <title>Rick and Morty</title>
+    
+</head>
+<body>
+    <!-- 
+    </div> -->
+    
+    <!-- <div class="headerMenu">
+        <input type="text" id="buscarPersonaje" placeholder="Buscar personaje" >
+        <span id="text-error"></span>
+
+        
+        <button id="botonBuscar">Buscar</button>
+        <button type="reset" id="reset">reset</button>
+    </div> -->
+<div class="titulo">
+
+    <h1>  el mundo de rick and morty</h1>
+</div>
+    <div class="paginacion">
+        <button id="botonCargarMenos" >Anterior</button>
+        <p id="numeroPagina"></p>
+        <button id="botonCargarMas" > Siguiente</button>
+       
+    </div>
+    <div class="container">
+
+        <aside>
+            <input type="text" id="buscarPersonaje" placeholder="Buscar personaje" required>
+            <!-- <span id="text-error"></span> -->
+            <button id="botonBuscar">Buscar</button>
+            <button type="reset" id="reset">reset</button>
+
+            <p>filtrar personajes</p>
+            <label for="selectStatus">Estado</label>
+            <select name="" id="status">
+                <option value="">All</option>
+                <option value="Alive">Alive</option>
+                <option value="Dead">Dead</option>
+                <option value="unknown">Unknown</option>
+            </select>
+            <br>
+            <label for="selectspecies">Especie</label>
+            <select name="" id="species">
+                <option value="">All</option>
+                <option value="Human">Human</option>
+                <option value="Alien">Alien</option>
+                <option value="Robot">Robot</option>
+            </select>
+            
+        </aside>
+        
+        <div id="appRickAndMorty"></div>
+    </div>
+        
+
+    <script src="app.js"></script>
+</body>
+</html>
