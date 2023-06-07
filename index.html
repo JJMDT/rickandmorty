@@ -14,50 +14,45 @@
     
 </head>
 <body>
-    <!-- 
-    </div> -->
-    
-    <!-- <div class="headerMenu">
-        <input type="text" id="buscarPersonaje" placeholder="Buscar personaje" >
-        <span id="text-error"></span>
 
-        
-        <button id="botonBuscar">Buscar</button>
-        <button type="reset" id="reset">reset</button>
-    </div> -->
 <div class="titulo">
 
     <h1>  el mundo de rick and morty</h1>
 </div>
-    <div class="paginacion">
+    <div class="paginacion" id="paginacion">
         <button id="botonCargarMenos" >Anterior</button>
         <p id="numeroPagina"></p>
         <button id="botonCargarMas" > Siguiente</button>
        
     </div>
+    <p id="resultados"></p>
     <div class="container">
 
         <aside>
-            <input type="text" id="buscarPersonaje" placeholder="Buscar personaje" required>
+            <input class= " buscarPersonaje"type="text" id="buscarPersonaje" placeholder="Buscar personaje" required>
             <!-- <span id="text-error"></span> -->
+            <br>
             <button id="botonBuscar">Buscar</button>
             <button type="reset" id="reset">reset</button>
 
             <p>filtrar personajes</p>
             <label for="selectStatus">Estado</label>
             <select name="" id="status">
+                <option value="ninguno" hidden>Seleccionar</option>
                 <option value="">All</option>
                 <option value="Alive">Alive</option>
                 <option value="Dead">Dead</option>
                 <option value="unknown">Unknown</option>
             </select>
             <br>
-            <label for="selectspecies">Especie</label>
+            <label for="selectSpecies">Especie</label>
             <select name="" id="species">
+                <option value="ninguno" hidden>Selecionar</option>
                 <option value="">All</option>
                 <option value="Human">Human</option>
                 <option value="Alien">Alien</option>
                 <option value="Robot">Robot</option>
+                <option value="Mythological Creature">Mythological Creature</option>
             </select>
             
         </aside>
